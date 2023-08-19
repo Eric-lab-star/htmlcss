@@ -2,14 +2,18 @@
 <html>
   <head>
     <link rel="stylesheet" type="" href="3dtriangle.css" />
+    <script defer src="3dtriangle.js"></script>
   </head>
   <body>
     <div>3d tv</div>
     <div class="scene">
-      <div class="frame">
-        <div class="left">Left</div>
-        <div class="right">Right</div>
-        <div class="bottom">bottom</div>
+      <div class="cube show-left">
+        <div class="cube__face cube__face--front" value="front">Front</div>
+        <div class="cube__face cube__face--back" value="back">Back</div>
+        <div class="cube__face cube__face--right" value="right">Right</div>
+        <div class="cube__face cube__face--left" value="left">Left</div>
+        <div class="cube__face cube__face--top" value="top">Top</div>
+        <div class="cube__face cube__face--bottom" value="bottom">Bottom</div>
       </div>
     </div>
   </body>
