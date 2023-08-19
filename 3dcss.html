@@ -6,10 +6,60 @@
   </head>
   <body>
     <div class="scene">
-      <div class="card">
-        <div class="card_face card_face--front">Front</div>
-        <div class="card_face card_face--back">Back</div>
+      <div class="cube">
+        <div
+          style="background-color: rgba(100, 0, 0, 0.5)"
+          class="cube__face cube__face--front"
+        >
+          front
+        </div>
+        <div
+          style="background-color: rgba(0, 100, 0, 0.5)"
+          class="cube__face cube__face--back"
+        >
+          back
+        </div>
+        <div
+          style="background-color: rgba(0, 0, 100, 0.5)"
+          class="cube__face cube__face--right"
+        >
+          right
+        </div>
+        <div
+          style="background-color: rgba(50, 50, 200, 0.5)"
+          class="cube__face cube__face--left"
+        >
+          left
+        </div>
+        <div
+          style="background-color: rgba(100, 100, 20, 0.5)"
+          class="cube__face cube__face--top"
+        >
+          top
+        </div>
+        <div
+          style="background-color: rgba(10, 200, 0, 0.5)"
+          class="cube__face cube__face--bottom"
+        >
+          bottom
+        </div>
       </div>
+    </div>
+    <div>
+      <form>
+        <input type="radio" id="front" name="show" value="front" checked />
+        <label for="front">front</label>
+        <input type="radio" id="right" name="show" value="right" />
+        <label for="right">right</label>
+        <input type="radio" id="back" name="show" value="back" />
+        <label for="back">back</label>
+        <input type="radio" id="left" name="show" value="left" />
+        <label for="left">left</label>
+        <input type="radio" id="top" name="show" value="top" />
+        <label for="top">top</label>
+        <input type="radio" id="bottom" name="show" value="bottom" />
+        <label for="bottom">bottom</label>
+      </form>
     </div>
   </body>
 </html>
