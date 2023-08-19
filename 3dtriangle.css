@@ -1,0 +1,78 @@
+:root {
+  font-size: 50px;
+}
+body {
+  margin: 0 auto;
+  height: minmax(100vh, auto);
+  font-size: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scene {
+  margin-top: 100px;
+  perspective: 400px;
+  width: 200px;
+  height: 200px;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: 5s spin forwards;
+  transform: rotateY(40deg);
+}
+
+.left {
+  position: absolute;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.3);
+  transform: rotateX(90deg) rotateY(60deg) translateZ(57.5px);
+}
+
+.right {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 100, 0, 0.3);
+  transform: rotateX(90deg) rotateY(-60deg) translateZ(57.5px);
+}
+
+.bottom {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 200, 0.3);
+  transform: rotateX(90deg) rotateY(180deg) translateZ(57.5px);
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(40deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* @keyframes zoomIn { */
+/*   from { */
+/*     transform: translateZ(100px); */
+/*   } */
+/*   to { */
+/*     transform: translateZ(300px); */
+/*   } */
+/* } */

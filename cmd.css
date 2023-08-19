@@ -1,0 +1,28 @@
+.scene {
+  margin-top: 100px;
+  display: grid;
+  place-items: center;
+  perspective: 400px;
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-50px);
+}
+
+.panel--front {
+  transform: rotateY(45deg) translateZ(50px);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.panel--back {
+  transform: rotateY(225deg) translateZ(50px);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 255, 0, 0.5);
+}
