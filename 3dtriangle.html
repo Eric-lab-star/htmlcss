@@ -5,15 +5,22 @@
     <script defer src="3dtriangle.js"></script>
   </head>
   <body>
-    <div>3d tv</div>
+    <div>
+      3d tv
+      <form>
+        <input id="yAxis" type="range" min="0" max="360" />
+      </form>
+    </div>
     <div class="scene">
-      <div class="cube show-left">
-        <div class="cube__face cube__face--front" value="front">Front</div>
-        <div class="cube__face cube__face--back" value="back">Back</div>
-        <div class="cube__face cube__face--right" value="right">Right</div>
-        <div class="cube__face cube__face--left" value="left">Left</div>
-        <div class="cube__face cube__face--top" value="top">Top</div>
-        <div class="cube__face cube__face--bottom" value="bottom">Bottom</div>
+      <div class="cube">
+        <div class="cube__face cube__face--front" data-value="front">Front</div>
+        <div class="cube__face cube__face--back" data-value="back">Back</div>
+        <div class="cube__face cube__face--right" data-value="right">Right</div>
+        <div class="cube__face cube__face--left" data-value="left">Left</div>
+        <div class="cube__face cube__face--top" data-value="top">Top</div>
+        <div class="cube__face cube__face--bottom" data-value="bottom">
+          Bottom
+        </div>
       </div>
     </div>
   </body>
