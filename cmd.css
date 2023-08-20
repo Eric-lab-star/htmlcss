@@ -7,3 +7,16 @@ button {
   height: 100px;
   width: 100px;
 }
+
+.panel {
+  height: 100px;
+  width: 100px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
