@@ -10,11 +10,17 @@
   <body>
     <div class="title">
       <h1>Unboxing</h1>
+      <form>
+        <input type="button" value="spin cube" class="spinBTN" />
+        <input type="button" value="open" class="openBTN" />
+      </form>
     </div>
     <div class="scene">
       <div class="cube">
-        <div class="cube__face cube--open">open</div>
-        <div class="cube__face cube--top"></div>
+        <div class="cube__face cube--top">
+          <div class="coverLR cube__face cover--left">open</div>
+          <div class="coverLR cube__face cover--right">open</div>
+        </div>
         <div class="cube__face cube--bottom">Bot</div>
         <div class="cube__face cube--left">Left</div>
         <div class="cube__face cube--right">Right</div>
